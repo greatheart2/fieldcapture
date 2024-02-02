@@ -111,7 +111,7 @@ class ProjectConfigurationService {
                 programConfig.projectReports = []
             }
             if (!projectConfig.projectReports) {
-                config.projectReports?.each { Map configuration ->
+                config?.projectReports?.each { Map configuration ->
                     Map projectReport = programConfig.projectReports?.find {
                         return it.category == configuration.category && it.activityType == configuration.activityType
                     }
